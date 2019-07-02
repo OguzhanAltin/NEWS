@@ -8,7 +8,7 @@ using System.Security.Principal;
 
 namespace News.Core.Entity
 {
-   public class CoreEntity
+    public class CoreEntity
     {
         public CoreEntity()
         {

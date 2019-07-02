@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "News.Utility", "News.Utilit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "News.DAL", "News.DAL\News.DAL.csproj", "{F1970892-73CE-409F-B757-9E4833DD8987}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "News.Service", "News.Service\News.Service.csproj", "{A2C3B771-7BD5-405C-B396-8A3E88F7C9C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{F1970892-73CE-409F-B757-9E4833DD8987}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1970892-73CE-409F-B757-9E4833DD8987}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1970892-73CE-409F-B757-9E4833DD8987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2C3B771-7BD5-405C-B396-8A3E88F7C9C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C3B771-7BD5-405C-B396-8A3E88F7C9C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C3B771-7BD5-405C-B396-8A3E88F7C9C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C3B771-7BD5-405C-B396-8A3E88F7C9C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace News.Model.Option
 {
-   public class Like : CoreEntity
+    public class Like : CoreEntity
     {
         public Guid AppUserID { get; set; }
         public virtual AppUser AppUser { get; set; }
