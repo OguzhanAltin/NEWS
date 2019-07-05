@@ -1,29 +1,15 @@
-﻿using News.Core.Entity;
+﻿using News.Model.Option;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace News.Model.Option
+namespace News.UI.Areas.Admin.Models.DTO
 {
-    public enum Gender
+    public class AppUserDTO
     {
-        None = 0,
-        Male = 1,
-        Female = 2
-    }
+        public Guid ID { get; set; }
 
-    public enum Role
-    {
-        None = 0,
-        Admin = 1,
-        Author = 2,
-        Member = 3
-    }
-
-    public class AppUser : CoreEntity
-    {
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string UserName { get; set; }
@@ -37,9 +23,5 @@ namespace News.Model.Option
 
         public Role Role { get; set; }
         public Gender Gender { get; set; }
-
-        public virtual List<Article> Articles { get; set; }
-        public virtual List<Like> Likes { get; set; }
-        public virtual List<Comment> Comments { get; set; }
     }
 }
