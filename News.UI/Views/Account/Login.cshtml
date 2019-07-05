@@ -57,13 +57,13 @@
                 <div class="row">
 
                     <!-- /.col -->
-                    <div class="col-xs-4">
+                    <div class="col-sm-4">
                         <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
                     </div>
 
                     <div id="validation-summary" class="@TempData["class"]">
                         @Html.ValidationSummary(false)
-                        <div id="credentials-error">
+                        <div id="credentials-error" style="color:red">
                             @ViewData["error"]
                         </div>
                     </div>

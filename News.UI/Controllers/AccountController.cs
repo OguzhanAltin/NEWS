@@ -67,9 +67,11 @@ namespace News.UI.Controllers
             }
         }
 
-        [HttpPost, ValidateAntiForgeryToken]
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
         public ActionResult Login(LoginVM credential)
-        {
+        {   
             if (ModelState.IsValid)
             {
                 if (_appUserService.CheckCredentials(credential.UserName, credential.Password))
@@ -129,6 +131,7 @@ namespace News.UI.Controllers
         public ActionResult LogOut()
         {
             FormsAuthentication.SignOut();
+            Session.Abandon();
             return Redirect("/Account/Login");
         }
     }
