@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayoutPage.cshtml";
+}
+
+@model List<News.Model.Option.Category>
+
+<section class="content-header">
+    <ol class="breadcrumb">
+        <li><a href="/Admin/Home/Index"><i class="fa fa-home"></i> Home </a></li>
+        <li> / </li>
+        <li><a href="/Admin/SubCategory/List">List of SubCategories</a></li>
+        <li> / </li>
+        <li class="active">Add SubCategory </li>
+    </ol>
+</section>
+
+<br />
+
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-md-6">
+            <form action="/Admin/SubCategory/Add" method="post" role="form" enctype="multipart/form-data">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label for="Name">Sub Category Name</label>
+                        <input type="text" name="Name" class="form-control" placeholder="Sub Category Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="Description">Description</label>
+                        <input type="text" name="Description" class="form-control" placeholder="Description">
+                    </div>
+                    <div class="form-group">
+                        <label for="CategoryID">Choose Category</label>
+                        <select name="CategoryID" class="form-control">
+                            @foreach (var item in Model)
+                            {
+                                <option value="@item.ID">@item.Name</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
