@@ -39,6 +39,7 @@ namespace News.UI.Areas.Admin.Controllers
         public ActionResult List()
         {
             List<SubCategory> model = _subCategoryService.GetActive();
+
             return View(model);
         }
 
